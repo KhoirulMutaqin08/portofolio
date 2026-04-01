@@ -1,7 +1,7 @@
 const text = [
   "Web Developer",
-  "Frontend Developer",
-  "UI Designer"
+  "Computer Engineering",
+  "Vocational High School 1 Batang Students"
 ];
 
 let i = 0;
