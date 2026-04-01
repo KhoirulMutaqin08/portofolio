@@ -35,11 +35,3 @@ function type() {
 }
 
 type();
-
-const bg = document.querySelector(".parallax-img");
-
-window.addEventListener("scroll", () => {
-  let scrollY = window.scrollY;
-
-  bg.style.transform = `translate(-50%, ${scrollY * 0.25}px)`;
-});
