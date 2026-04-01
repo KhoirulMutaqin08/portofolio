@@ -36,8 +36,10 @@ function type() {
 
 type();
 
+const bg = document.querySelector(".parallax-img");
+
 window.addEventListener("scroll", () => {
-  const bg = document.querySelector(".bg-image");
-  let offset = window.scrollY;
-  bg.style.transform = `translateY(${offset * 0.3}px)`;
+  let scrollY = window.scrollY;
+
+  bg.style.transform = `translate(-50%, ${scrollY * 0.25}px)`;
 });
