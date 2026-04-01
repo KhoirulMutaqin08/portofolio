@@ -35,3 +35,9 @@ function type() {
 }
 
 type();
+
+window.addEventListener("scroll", () => {
+  const bg = document.querySelector(".bg-image");
+  let offset = window.scrollY;
+  bg.style.transform = `translateY(${offset * 0.3}px)`;
+});
