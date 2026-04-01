@@ -25,3 +25,43 @@ body {
   0%,100% {opacity:0}
   50% {opacity:1}
 }
+
+/* BACKGROUND IMAGE */
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('assets/bgpix.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  z-index: -2;
+}
+
+.bg-image {
+  filter: blur(2px);
+}
+
+/* OVERLAY (BIAR GELAP & ELEGAN) */
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(3, 0, 20, 0.7); /* transparansi */
+  z-index: -1;
+}
+
+.bg-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(3,0,20,0.6),
+    rgba(3,0,20,0.9)
+  );
+}
